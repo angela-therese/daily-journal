@@ -1,0 +1,31 @@
+{
+    "entries": [
+
+        {
+            "id": 1,
+            "date": "01/14/2021",
+            "concept": "The DOM",
+            "entry": "We used Martin's Aquarium to practice turning HTML into the DOM. It took me all day to comprehend the example. Okay, fine, I lied. I never comprehended it. HAHAHAHA.  ",
+            "mood": "Ok."
+        },
+    
+        {
+            "id": 2,
+            "date": "01/15/2021",
+            "concept": "The DOM",
+            "entry": "Things that took me eight hours yesterday took 4 today. Improvement!",
+            "mood": "Ok."
+        },
+    
+        {
+            "id": 3,
+            "date": "01/18/2021",
+            "concept": "The DOM",
+            "entry": "I made crazy color-coded maps to understand the DOM process. It helped some. What took me 8 hours four days ago took me 1 today. Getting there.",
+            "mood": "Good."
+        }
+
+    ]
+
+
+}
