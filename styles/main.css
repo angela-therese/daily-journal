@@ -70,7 +70,8 @@ header {
  .form-fieldset {
 	/* height: 60vh; */
 	width: 45vw;
-	margin-right: 5em;
+	margin-left: 1em;
+	margin-right: 3em;
 	padding-left: 1em;
 	padding-right: 1em;
 	
@@ -93,9 +94,7 @@ header {
 }
 #journalEntry {
 	width: 85%;
-	
-	
-	
+		
 }
 
 #mood {
@@ -124,14 +123,13 @@ text-align: left;
 .journalEntry {
 	background-color: white;
 	border-radius: 2em;
+	padding: .2em;
 }
 
 .entries_block {
+	
 	width: 85%
 }
-
-
-
 
 
 .content-boxes {

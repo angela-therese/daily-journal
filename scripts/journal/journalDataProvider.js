@@ -12,7 +12,7 @@ export const getEntries = () => {
 }
 
 export const saveEntry = entry => {
-    return fetch('http://localhost:8087/notes', {
+    return fetch('http://localhost:8087/entries', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
