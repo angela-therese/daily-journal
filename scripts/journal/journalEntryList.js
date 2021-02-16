@@ -17,7 +17,7 @@ export const EntryListComponent = () => {
         entriesHTMLstring += entryCard(entry)
         console.log(entriesHTMLstring)
         }  
-        entryLog.innerHTML += `<h3>Previous Entries</h3>
+        entryLog.innerHTML += `<h3 class="main-headings">Previous Entries</h3>
                                 ${entriesHTMLstring}`     
     })
         

@@ -4,7 +4,7 @@ import { saveEntry } from "./journalDataProvider.js";
 export const JournalForm = () => {
 
     document.querySelector("#entry_form").innerHTML += ` 
-    <h3>New Entry</h3>
+    <h3 class="main-headings">New Entry</h3>
    <fieldset class="form-background form-fieldset">
        <label for="journalDate">Date of Entry</label>
        <input type="date" name="journalDate" id="journalDate"> <br>

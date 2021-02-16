@@ -14,7 +14,7 @@ textarea {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
+  /* font-family: "Patua One", serif; */
   letter-spacing: 2px;
 }
 
@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 body {
-	background-image: url(/images/dailyJournal\ \(4\).png);
+	
 	background-position:center
 }
 
@@ -51,7 +51,7 @@ main{
 header {
 	margin-bottom: 2em;
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
 	
 }
@@ -70,20 +70,31 @@ header {
  .form-fieldset {
 	/* height: 60vh; */
 	width: 45vw;
-	margin-left: 1em;
+	margin-left: 3em;
 	margin-right: 3em;
 	padding-left: 1em;
 	padding-right: 1em;
+	background-color: white
 	
 	
 }
 
 .form-background {
-	background-color: white;
-	opacity: .8;
+	background-color: rgb(238, 234, 213);
 	border-radius: 2em;
 
 }
+
+.main-headings { 
+	color: rgb(250, 245, 194);
+}
+
+#main-container {
+	background-color: black;
+	padding-bottom: 3em;
+
+}
+
 #journalDate {
 	width: 20vw;
 }
@@ -100,6 +111,13 @@ header {
 #mood {
 	width: 25%
 }
+
+#recordEntry {
+	background-color: rgb(204, 144, 144);
+	width: 15vw;
+	
+}
+
 
 input[type="text"] {
 	text-align: left;
@@ -121,10 +139,15 @@ text-align: left;
 /*journal entry CSS*/
 
 .journalEntry {
-	background-color: white;
+	background-color:  rgb(238, 234, 213);
 	border-radius: 2em;
+	margin: 1em;
 	padding: .2em;
+	
+	
+	
 }
+
 
 .entries_block {
 	
