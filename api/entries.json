@@ -1,12 +1,85 @@
 {
   "entries": [
-    
     {
-      "date": "2021-02-15",
-      "conceptsCovered": "DOM",
-      "entryText": "A little rusty, reviewing to get back in the swing of things. ",
+      "date": "2021-02-24",
+      "conceptsCovered": "Many to many relationships",
+      "entryText": "Adding tags to entries",
+      "mood": "great",
+      "tags": "",
+      "id": 6
+    },
+    {
+      "date": "2021-02-24",
+      "conceptsCovered": "ERD, Many-to-Many Relationships",
+      "entryText": "Kinda hard! ",
+      "mood": "good",
+      "tags": [
+        "Relationships",
+        " API"
+      ],
+      "id": 7
+    },
+    {
+      "date": "2021-02-24",
+      "conceptsCovered": "ERD",
+      "entryText": "Testing",
+      "mood": "good",
+      "tags": [
+        "Relationships",
+        " API"
+      ],
+      "id": 8
+    },
+    {
+      "date": "2021-02-23",
+      "conceptsCovered": "",
+      "entryText": "",
+      "mood": "great",
+      "tags": [
+        ""
+      ],
+      "id": 9
+    },
+    {
+      "date": "2021-02-27",
+      "conceptsCovered": "Making new tags",
+      "entryText": "Using filters and other stuff",
       "mood": "okay",
-      "id": 5
+      "tags": [
+        "Tags",
+        "API"
+      ],
+      "id": 10
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "subject": "API"
+    },
+    {
+      "id": 2,
+      "subject": "DOM"
+    },
+    {
+      "id": 3,
+      "subject": "Relationships"
+    },
+    {
+      "subject": "Tags",
+      "id": 4
+    }
+  ],
+  "entryTags": [
+    {
+      "id": 2,
+      "entryId": 6,
+      "tagId": 3
+    },
+    {
+      "id": 3,
+      "entryId": 6,
+      "tagId": 1
     }
   ]
 }

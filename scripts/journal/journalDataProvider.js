@@ -23,4 +23,11 @@ export const saveEntry = entry => {
 
 }
 
+export const deleteEntry = entryId => {
+    return fetch(`http://localhost:8087/entries/${entryId}`, {
+        method: "DELETE"
+    })
+}
+
+
 

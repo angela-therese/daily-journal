@@ -1,10 +1,11 @@
-import { getEntries, useEntries, saveEntry } from "./journalDataProvider.js";
+import { getEntries, useEntries, saveEntry, deleteEntry } from "./journalDataProvider.js";
 import { entryCard } from "./journalEntry.js";
+
 
 // DOM reference to where all entries will be rendered
 const entryLog = document.querySelector("#entryLog")
 
-export const EntryListComponent = () => {
+export const entryList = () => {
     // Use the journal entry data from the data provider component
     getEntries()
     .then(() => {
@@ -24,7 +25,22 @@ export const EntryListComponent = () => {
     
     }
 
-       
+const eventHub = document.querySelector("main")
+
+ eventHub.addEventListener("click", (eventObject) => {
+    
+  if (eventObject.target.id.startsWith("deleteEntry")) {
+  
+  
+    const entryToDelete = eventObject.target.id.split("-")[2]
+    console.log(entryToDelete)
+   
+    deleteEntry(entryToDelete)
+
+    // Call the deleteNote function and pass in the appropriate id
+    // Then call NoteList to refresh the list of notes
+  }
+});
         
 
 

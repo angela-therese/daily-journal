@@ -1,5 +1,7 @@
-import { EntryListComponent } from "./journalEntryList.js"
+import { entryList } from "./journalEntryList.js"
 import { saveEntry } from "./journalDataProvider.js";
+import { getTags, useTags } from "../tags/TagProvider.js"
+import { NewTags } from '../tags/TagList.js'
 
 export const JournalForm = () => {
 
@@ -20,8 +22,10 @@ export const JournalForm = () => {
            <option value="not good">Not good.</option>
            <option value="terrible">Terrible.</option>
         </select><br>
+        <label for="tags">Tags</label>
+        <input type="text" placeholder="Separate multiple tags with commas" name="tags"id="entry-tags"><br>
         <button id="recordEntry" type="submit" value="submit">Record Entry</button>
-
+        
    </fieldset>
 
 </form>
@@ -43,18 +47,57 @@ eventHub.addEventListener("click", clickEvent => {
      let conceptsInput = document.getElementById("conceptsCovered").value;
     let entryInput = document.getElementById("journalEntry").value
      let moodInput = document.getElementById("mood-select").value
+     let tagsInput = document.getElementById("entry-tags").value.split(', ')
+
+   
+     
         const newEntry = {
                         "date": dateInput,
                         "conceptsCovered": conceptsInput,
                         "entryText": entryInput,
-                        "mood": moodInput
+                        "mood": moodInput, 
+                        "tags": tagsInput
                         }
-
-                    saveEntry(newEntry)
-                    .then(EntryListComponent())
-                    
+                          NewTags(tagsInput)
+                        console.log(tagsInput)
+                         saveEntry(newEntry)
+                        
+                         
+                       
+                         
                     
     }
    
-})
+
+    
+    })
+    
+  
+
+  
+    
+      
+
+
+    //   export const entryList = () => {
+    //     // Use the journal entry data from the data provider component
+    //     getEntries()
+    //     .then(() => {
+    //          const entries = useEntries()
+    //          console.log(entries)
+             
+    //          let entriesHTMLstring =''
+        
+    //         for(const entry of entries) {
+    //         entriesHTMLstring += entryCard(entry)
+    //         console.log(entriesHTMLstring)
+    //         }  
+    //         entryLog.innerHTML += `<h3 class="main-headings">Previous Entries</h3>
+    //                                 ${entriesHTMLstring}`     
+    //     })
+            
+        
+    //     }
+    
+
 
