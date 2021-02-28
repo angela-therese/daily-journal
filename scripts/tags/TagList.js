@@ -21,8 +21,7 @@ export const NewTags = (tagsArray) => {
         
        
        
-        //LAST STEP: Save each item in the newTags array to the tags in the JSON
-       
+     
     } )
   
 
